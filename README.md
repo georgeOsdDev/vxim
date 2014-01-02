@@ -5,16 +5,16 @@ VXiM is a Vagrant Box(Ubuntu 12.04) of Xitrum and MongoDB stack.
 ##How to Start
 1. Download and install VirtualBox by [clicking here](https://www.virtualbox.org/wiki/Downloads)
 2. Download and install Vagrant by [clicking here](http://downloads.vagrantup.com/)
-3. Install [vagrant-berkshelf-plugin](https://github.com/berkshelf/vagrant-berkshelf)
+3. Install [vagrant-berkshelf-plugin](https://github.com/berkshelf/vagrant-berkshelf) by `vagrant plugin install berkshelf`
 4. Clone this repository.
-5. cd /path/to/vxim
-6. vagrant up
+5. `cd /path/to/vxim`
+6. `vagrant up`
 7. Wait few minute with a cup of coffee for the warmup virtual machine. This will take a little while depending on your internet connection.
 
 
 ## Setting
 
-`Vagrantfile`
+Configuration `Vagrantfile`
 
 * VXIM_HOSTNAME : Guest hostname this value will be add in `/etc/hosts` with `vagrant up`. default value is `vxim.localhost`
 * VXIM_IP       : Guest ip address
@@ -45,6 +45,6 @@ For more customize, hack `site-cookbooks/xitrum`.
 
 Latest MongDB will be installed.MongoDB will working on 27017.
 
-So you can access it with `mongo vxim.localhost:27018` command from host OS.
+So you can access it with `mongo vxim.localhost:27017` command from host OS.
 
 For more customize, See [community](http://community.opscode.com/cookbooks/mongodb) guide,
