@@ -5,7 +5,7 @@ VXiM is a Vagrant Box(Ubuntu 12.04) of Xitrum and MongoDB stack.
 ##How to Start
 1. Download and install VirtualBox by [clicking here](https://www.virtualbox.org/wiki/Downloads)
 2. Download and install Vagrant by [clicking here](http://downloads.vagrantup.com/)
-3. Install [vagrant-berkshelf-plugin](https://github.com/berkshelf/vagrant-berkshelf) by `vagrant plugin install berkshelf`
+3. Install [vagrant-berkshelf-plugin](https://github.com/berkshelf/vagrant-berkshelf) by `vagrant plugin install vagrant-berkshelf`
 4. Clone this repository.
 5. `cd /path/to/vxim`
 6. `vagrant up`
