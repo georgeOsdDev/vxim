@@ -11,6 +11,7 @@ APP_MAIN      = "quickstart.Boot"                          # default:quickstart.
 
 Vagrant.configure("2") do |config|
 
+  config.omnibus.chef_version = :latest
   config.vm.define :vxim do |vxim|
     vxim.vm.box = "precise64"
     vxim.vm.box_url = "http://files.vagrantup.com/precise64.box"
@@ -38,7 +39,7 @@ Vagrant.configure("2") do |config|
         },
         :java => {
           :install_flavor => "oracle",
-          :jdk_version => 7,
+          :jdk_version => "7",
           :oracle => {
             "accept_oracle_download_terms" => true
           }
