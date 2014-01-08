@@ -13,5 +13,4 @@ Gemfile.lock
 bin/*
 .bundle/*
 
-app/*
 .DS_Store
