@@ -36,7 +36,7 @@ Application will start automatically.
 So you can see application on `http://vxim.localhost:8000` or `https://vxim.localhost:4430` from host OS.
 (Port 8000 and 4430 is default port of xitrum)
 
-Default application scaffold is latest [Xitrum-new](http://github.com/ngocdathan/xirum-new)
+Default application scaffold is latest [Xitrum-new](http://github.com/xitrum-framework/xirum-new)
 
 **NOTICE**
 Xitrum-new does not contain mongoDB related logic default.

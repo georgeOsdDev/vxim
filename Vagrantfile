@@ -5,9 +5,9 @@
 VXIM_HOSTNAME = "vxim.localhost"  # e.g example.com
 VXIM_IP       = "192.168.33.10"   # host ip address
 
-APP_NAME      = "vxim-sample"                              # default:xitrum-new
-APP_REPO      = "git://github.com/ngocdaothanh/xitrum-new" # default:xitrum-new
-APP_MAIN      = "quickstart.Boot"                          # default:quickstart.Boot
+APP_NAME      = "vxim-sample"                                  # default:xitrum-new
+APP_REPO      = "git://github.com/xitrum-framework/xitrum-new" # default:xitrum-new
+APP_MAIN      = "quickstart.Boot"                              # default:quickstart.Boot
 
 Vagrant.configure("2") do |config|
 
