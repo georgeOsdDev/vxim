@@ -2,12 +2,12 @@
 # vi: set ft=ruby :
 
 
-VXIM_HOSTNAME = "vxim.localhost"  # e.g example.com
+VXIM_HOSTNAME = "konnect.localhost"  # e.g example.com
 VXIM_IP       = "192.168.33.10"   # host ip address
 
-APP_NAME      = "vxim-sample"                              # default:xitrum-new
-APP_REPO      = "git://github.com/ngocdaothanh/xitrum-new" # default:xitrum-new
-APP_MAIN      = "quickstart.Boot"                          # default:quickstart.Boot
+APP_NAME      = "konnect" # default:xitrum-new
+APP_REPO      = ""        # Not need for konnect. Extract konnect.zip into `app` dir before vagrant up
+APP_MAIN      = ""        # Not need for konnect. Extract konnect.zip into `app` dir before vagrant up
 
 Vagrant.configure("2") do |config|
 
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
       chef.add_recipe "mongodb::10gen_repo"
       chef.add_recipe "mongodb"
       chef.add_recipe "java"
-      chef.add_recipe "xitrum"
+      chef.add_recipe "xitrum::konnect"
       chef.json = {
         :mongodb => {
           :dbpath => "/data/db"
